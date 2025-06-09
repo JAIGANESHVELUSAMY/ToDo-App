@@ -9,6 +9,7 @@ const userSchema = new mongoose.Schema({
     githubId: { type: String, unique: true, sparse: true },
     image: { type: String },
 }, { timestamps: true });
+
 userSchema.pre('save', async function(next) {
     if (!this.isModified('password') || !this.password) return next();
     try {
@@ -24,4 +25,4 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
     return await bcrypt.compare(candidatePassword, this.password);
 };
 
-module.exports = mongoose.model('user', userSchema);
+module.exports = mongoose.model('User', userSchema);

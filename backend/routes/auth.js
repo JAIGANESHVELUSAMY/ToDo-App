@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const passport = require('passport');
 const jwt = require('jsonwebtoken');
-const User = require('../models/user');
+const User = require('../models/User');
 
 // --- SIMPLIFIED AND RELIABLE TOKEN CREATION ---
 const createToken = (user) => {

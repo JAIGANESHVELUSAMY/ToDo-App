@@ -7,4 +7,4 @@ const taskSchema = new mongoose.Schema({
     dueDate: { type: Date },
     dueTime: { type: String },
 }, { timestamps: true });
-module.exports = mongoose.model('task', taskSchema);
+module.exports = mongoose.model('Task', taskSchema);
