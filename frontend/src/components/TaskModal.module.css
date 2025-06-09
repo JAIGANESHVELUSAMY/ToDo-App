@@ -1,0 +1,14 @@
+.overlay { position: fixed; inset: 0; background-color: rgba(15,23,42,0.6); display: flex; align-items: center; justify-content: center; z-index: 50; backdrop-filter: blur(4px); }
+.modal { background-color: var(--card-background-color); border-radius: 1rem; padding: 2rem; width: 90%; max-width: 500px; border: 1px solid var(--border-color); }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+.header h2 { font-size: 1.5rem; font-weight: 700; }
+.closeButton { background: none; border: none; cursor: pointer; color: var(--text-secondary-color); padding: 0.5rem; border-radius: 50%; }
+.closeButton:hover { background-color: var(--background-color); }
+.formGroup { margin-bottom: 1rem; }
+.formGroup label { display: block; font-weight: 500; margin-bottom: 0.5rem; font-size: 0.875rem; }
+.formGroup input, .formGroup textarea { width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 0.5rem; font-size: 1rem; background-color: transparent; color: inherit; }
+.formGroup input:focus, .formGroup textarea:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 2px rgba(59,130,246,0.2); }
+.footer { display: flex; justify-content: flex-end; gap: 1rem; margin-top: 2rem; }
+.footer button { padding: 0.6rem 1.25rem; border-radius: 0.5rem; font-weight: 600; border: none; cursor: pointer; }
+.cancelButton { background-color: var(--border-color); color: var(--text-primary-color); }
+.saveButton { background-color: var(--primary-color); color: white; }

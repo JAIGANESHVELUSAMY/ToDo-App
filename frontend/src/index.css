@@ -1,0 +1,33 @@
+/* Global Styles with Light/Dark Theme Support */
+:root {
+  --primary-color: #3b82f6; --primary-hover-color: #2563eb;
+  --green-color: #22c55e; --red-color: #ef4444;
+  --text-light-mode: #1e293b; --text-dark-mode: #e2e8f0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme (Default) */
+body.light {
+  --background-color: #f8fafc; /* Slate 50 */
+  --card-background-color: #ffffff;
+  --text-primary-color: var(--text-light-mode);
+  --text-secondary-color: #64748b; /* Slate 500 */
+  --border-color: #e2e8f0; /* Slate 200 */
+  background-color: var(--background-color);
+  color: var(--text-primary-color);
+}
+
+/* Dark Theme */
+body.dark {
+  --background-color: #0f172a; /* Slate 900 */
+  --card-background-color: #1e293b; /* Slate 800 */
+  --text-primary-color: var(--text-dark-mode);
+  --text-secondary-color: #94a3b8; /* Slate 400 */
+  --border-color: #334155; /* Slate 700 */
+  background-color: var(--background-color);
+  color: var(--text-primary-color);
+}
