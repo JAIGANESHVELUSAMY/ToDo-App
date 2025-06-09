@@ -64,8 +64,8 @@ To run this project on your local machine, follow these steps.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/[YOUR-USERNAME]/[YOUR-REPO-NAME].git
-cd [YOUR-REPO-NAME]
+git clone https://github.com/JAIGANESHVELUSAMY/ToDo-App
+cd ToDo-App
 ```
 
 ### 2. Backend Setup
