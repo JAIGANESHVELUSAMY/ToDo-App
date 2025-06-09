@@ -9,7 +9,6 @@ const userSchema = new mongoose.Schema({
     githubId: { type: String, unique: true, sparse: true },
     image: { type: String },
 }, { timestamps: true });
-
 userSchema.pre('save', async function(next) {
     if (!this.isModified('password') || !this.password) return next();
     try {
