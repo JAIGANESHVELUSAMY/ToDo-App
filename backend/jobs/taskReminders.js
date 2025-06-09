@@ -1,6 +1,6 @@
 const cron = require('node-cron');
 const Task = require('../models/task');
-const User = require('../models/User');
+const User = require('../models/user');
 const { sendReminderEmail } = require('../services/emailService');
 
 // Runs every minute
