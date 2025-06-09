@@ -2,7 +2,7 @@ const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const GitHubStrategy = require('passport-github2').Strategy;
 const LocalStrategy = require('passport-local').Strategy;
-const User = require('../models/User');
+const User = require('../models/user');
 
 const findOrCreateUser = async (profile, provider, done) => {
     const email = profile.emails && (profile.emails.find(e => e.primary)?.value || profile.emails[0].value);
