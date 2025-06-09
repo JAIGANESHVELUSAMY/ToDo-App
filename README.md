@@ -5,8 +5,7 @@
 TaskMaster is a modern, full-stack web application designed to help users manage their personal to-do tasks efficiently. It features a clean, responsive user interface, secure authentication via multiple providers, and a robust backend API for full CRUD (Create, Read, Update, Delete) functionality.
 
 ### Live Demo & Video
-- **Live Application:** **[Link to your live Vercel/Netlify frontend]**
-- **Loom Demonstration:** **[Link to your Loom video walkthrough]**
+- **Live Application:** **[https://todo-app-oddz.onrender.com]**
 
 ---
 
