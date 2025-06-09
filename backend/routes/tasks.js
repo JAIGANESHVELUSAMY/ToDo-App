@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Task = require('../models/Task');
+const Task = require('../models/task');
 const authenticate = require('../middleware/authenticate');
 
 // This applies the authenticate middleware to ALL routes in this file
